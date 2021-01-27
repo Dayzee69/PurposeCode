@@ -1,0 +1,26 @@
+﻿<Window x:Class="PurposeCode.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PurposeCode"
+        mc:Ignorable="d"
+        Title="Код вида дохода" Height="300" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel Height="160" Width="200" HorizontalAlignment="Right">
+            <DatePicker x:Name="datePicker" HorizontalAlignment="Left" Margin="0,10,0,0" Height="25" Width="150" />
+            <Label Grid.Column="1" Content="Номер документа" Margin="0,20,0,0" HorizontalAlignment="Left" Height="25" Width="110"  />
+            <TextBox x:Name="docNumTb" Height="25" HorizontalAlignment="Left" Margin="0,0,0,0" Text="" Width="150" VerticalContentAlignment="Center" />
+            <Button x:Name="getButton" Content="Получить"  Height="25" Width="150" Margin="0,20,0,0" Click="GetButton_Click" HorizontalAlignment="Left"/>
+        </StackPanel >
+        <StackPanel Height="160" Width="350" HorizontalAlignment="Left">
+            <Label x:Name="nameLabel" HorizontalAlignment="Left" Margin="50,0,0,0" Content="Наименование:" Height="25" Width="100"/>
+            <TextBlock x:Name="nameTb" HorizontalAlignment="Left" Margin="50,0,0,0" TextWrapping="Wrap" Text="" Height="25" Width="300"/>
+            <Label x:Name="valueLabel" HorizontalAlignment="Left" Margin="50,0,0,0" Content="Сумма:" Height="25" Width="110"/>
+            <TextBox x:Name="valueTb" HorizontalAlignment="Left" Margin="50,0,0,0" Height="25" TextWrapping="Wrap" Text=""  Width="150" VerticalContentAlignment="Center" IsReadOnly="True"/>
+            <Label x:Name="purposeCodeLabel" HorizontalAlignment="Left" Margin="50,0,0,0" Content="Код вида дохода:" Height="25" Width="110"/>
+            <TextBox x:Name="purpuseCodeTb" HorizontalAlignment="Left" Margin="50,0,0,0" Height="25" TextWrapping="Wrap" Text=""  Width="150" VerticalContentAlignment="Center" IsReadOnly="True"/>
+        </StackPanel >
+
+    </Grid>
+</Window>
